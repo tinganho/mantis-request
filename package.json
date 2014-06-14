@@ -1,0 +1,23 @@
+{
+  "name": "mantis-request",
+  "version": "0.0.0",
+  "description": "Mantis-request library is sued in the Mantis-framework for issueing HTTP requests.",
+  "main": "request.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tinganho/mantis-request.git"
+  },
+  "keywords": [
+    "request",
+    "http"
+  ],
+  "author": "Tingan Ho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinganho/mantis-request/issues"
+  },
+  "homepage": "https://github.com/tinganho/mantis-request"
+}
