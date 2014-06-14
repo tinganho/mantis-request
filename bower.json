@@ -1,0 +1,23 @@
+{
+  "name": "mantis-request",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tinganho/mantis-request",
+  "authors": [
+    "Tingan Ho <tingan87@gmail.com>"
+  ],
+  "description": "Mantis-request library is used in the Mantis-framework for issuing client-side request HTTP requests.",
+  "main": "request.js",
+  "keywords": [
+    "request",
+    "http"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}
