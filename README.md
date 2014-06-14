@@ -8,10 +8,12 @@ Mantis request library is a client-side library for issuing HTTP requests.
 requestHTTP()
   .POST('/login', 'application/json')
   .withHeader('authorization', 'Bearer oiwejfiowfejoiefjwef')
-    .and('authorization, 'oiewjfiowejf')
+    .and('authorization', 'oiewjfiowejf')
   .withQueryParam('email', 'tingan87@gmail.com')
     .and('firstname', 'Tingan')
     .and('lastname', 'Ho')
+  .withBodyField('email'. 'tingan87@gmail.com')
+    .and('ojewfijwe', 'wefoeif')
   .whenSucceded(function(response) {
 
   })

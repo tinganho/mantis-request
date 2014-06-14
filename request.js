@@ -101,20 +101,6 @@
   };
 
   /**
-   * Send fields
-   *
-   * @param {Object} fields
-   * @return {Request}
-   * @api public
-   */
-
-  Request.prototype.send = function(fields) {
-    this.options.fields = fields;
-
-    return this;
-  };
-
-  /**
    * Simulating the end callback for superagent
    *
    * @param {Function} callback
@@ -257,7 +243,25 @@
     this._options.queries[name] = value;
 
     // Chain with and()
-    this.and = this.withHeader;
+    this.and = this.withQueryParam;
+
+    return this;
+  };
+
+  /**
+   * Use field in HTTP body
+   *
+   * @param {String} name
+   * @param {String} value
+   * @return {Request}
+   * @api public
+   */
+
+  Request.prototype.withField = function(name, value) {
+    this._options.fields[name] = value;
+
+    // Chain with and()
+    this.and = this.withField;
 
     return this;
   };
